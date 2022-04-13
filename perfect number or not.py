@@ -1,9 +1,11 @@
-#Write a Python function to check whether a number is perfect or not.
+#Write a Python function to check whether a number is perfect or not.EX:6
 
-def perfect_number(n):
-    sum = 0
-    for x in range(1, n):
-        if n % x == 0:
-            sum += x
-    return sum == n
-print(perfect_number(6))
+num = int(input("enter the number:"))
+result = 0
+for i in range (1,num):
+    if(num%i)==0:
+        result=result+i
+if result==num:
+    print(num,"is perfect number")
+else:
+    print(num,"is not perfect number")
